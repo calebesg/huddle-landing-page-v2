@@ -47,3 +47,24 @@ main
       max-width: 64.375rem
       width: 100%
 
+    .result-data
+      margin-top: 128px
+      display: flex
+      align-items: center
+      gap: 348px
+
+      .item
+        @include mixins.flex-center
+        flex-direction: column
+
+        img
+          align-self: flex-start
+
+        p
+          font-size: 78px
+          font-weight: bold
+
+        small
+          font-size: 1.25rem
+          color: variables.$cyan-900
+          opacity: .8

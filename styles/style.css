@@ -16,6 +16,10 @@ h2 {
   color: #00252e;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -102,6 +106,30 @@ main .presentation .banner {
   margin-top: 7.5rem;
   max-width: 64.375rem;
   width: 100%;
+}
+main .presentation .result-data {
+  margin-top: 128px;
+  display: flex;
+  align-items: center;
+  gap: 348px;
+}
+main .presentation .result-data .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .presentation .result-data .item img {
+  align-self: flex-start;
+}
+main .presentation .result-data .item p {
+  font-size: 78px;
+  font-weight: bold;
+}
+main .presentation .result-data .item small {
+  font-size: 1.25rem;
+  color: #00252e;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

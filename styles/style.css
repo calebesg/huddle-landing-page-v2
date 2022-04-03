@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #00252e;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+}
+header .header-container {
+  padding: 4.875rem 3.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container a.btn {
+  width: 8.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  color: #ff52bf;
+  background-color: white;
+  border: 1px solid #ff52bf;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-container a.btn:hover {
+  border-color: #ff8fd8;
+  color: #ff8fd8;
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+main .presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+main .presentation .title {
+  margin-top: 11.125rem;
+  font-size: 3.125rem;
+  text-align: center;
+}
+main .presentation .description {
+  margin-top: 2rem;
+  max-width: 37.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+main .presentation .btn {
+  margin-top: 3rem;
+  color: white;
+  background-color: #ff52bf;
+  font-size: 1.25rem;
+  font-weight: bold;
+  max-width: 25rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 37, 46, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-out;
+}
+main .presentation .btn:hover {
+  background-color: #ff8fd8;
+}
+main .presentation .banner {
+  margin-top: 7.5rem;
+  max-width: 64.375rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

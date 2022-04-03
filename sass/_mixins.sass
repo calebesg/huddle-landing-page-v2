@@ -1,0 +1,38 @@
+@use 'variables'
+
+@mixin container($screen)
+  max-width: $screen
+  margin: 0 auto
+
+@mixin flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin btn-large
+  color: white
+  background-color: variables.$pink-300
+  font-size: 1.25rem 
+  font-weight: bold
+  max-width: 25rem
+  width: 100%
+  height: 5rem
+  border-radius: 2.5rem
+  box-shadow: 0 0.5rem 1rem variables.$cyan-alpha-900
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: background 0.3s ease-out
+
+  &:hover
+    background-color: variables.$pink-100
+
+@mixin btn-outline
+  color: variables.$pink-300
+  background-color: white
+  border: 1px solid  variables.$pink-300
+  transition: all 0.3s ease-out
+
+  &:hover
+    border-color: variables.$pink-100
+    color: variables.$pink-100

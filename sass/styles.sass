@@ -1,0 +1,49 @@
+@use 'global'
+@use 'variables'
+@use 'mixins'
+
+header
+  width: 100%
+
+  .header-container
+    padding: 4.875rem 3.875rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    a.btn
+      width: 8.5rem
+      height: 2.5rem
+      border-radius: 1.25rem
+      @include mixins.btn-outline
+      @include mixins.flex-center
+
+main
+  @include mixins.container(variables.$desktop)
+
+  .presentation
+    @include mixins.flex-center
+    flex-direction: column
+    margin: 0 auto
+
+    .title
+      margin-top: 11.125rem
+      font-size: 3.125rem
+      text-align: center
+
+    .description
+      margin-top: 2rem
+      max-width: 37.5rem
+      text-align: center
+      font-size: 1.25rem
+      line-height: 2rem
+
+    .btn
+      margin-top: 3rem
+      @include mixins.btn-large
+
+    .banner
+      margin-top: 7.5rem
+      max-width: 64.375rem
+      width: 100%
+

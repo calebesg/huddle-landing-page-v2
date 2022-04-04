@@ -19,12 +19,10 @@ header
       @include mixins.flex-center
 
 main
-  @include mixins.container(variables.$desktop)
-
   .presentation
+    @include mixins.container(variables.$desktop)
     @include mixins.flex-center
     flex-direction: column
-    margin: 0 auto
 
     .title
       margin-top: 11.125rem
@@ -48,10 +46,10 @@ main
       width: 100%
 
     .result-data
-      margin-top: 128px
+      margin-top: 8rem
       display: flex
       align-items: center
-      gap: 348px
+      gap: 21.75rem
 
       .item
         @include mixins.flex-center
@@ -61,10 +59,14 @@ main
           align-self: flex-start
 
         p
-          font-size: 78px
+          font-size: 4.875rem
           font-weight: bold
 
         small
           font-size: 1.25rem
           color: variables.$cyan-900
           opacity: .8
+
+  .wave
+    margin-top: 130px
+

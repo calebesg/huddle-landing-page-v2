@@ -60,16 +60,13 @@ header .header-container a.btn:hover {
   color: #ff8fd8;
 }
 
-main {
+main .presentation {
   max-width: 75rem;
   margin: 0 auto;
-}
-main .presentation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
 }
 main .presentation .title {
   margin-top: 11.125rem;
@@ -108,10 +105,10 @@ main .presentation .banner {
   width: 100%;
 }
 main .presentation .result-data {
-  margin-top: 128px;
+  margin-top: 8rem;
   display: flex;
   align-items: center;
-  gap: 348px;
+  gap: 21.75rem;
 }
 main .presentation .result-data .item {
   display: flex;
@@ -123,13 +120,16 @@ main .presentation .result-data .item img {
   align-self: flex-start;
 }
 main .presentation .result-data .item p {
-  font-size: 78px;
+  font-size: 4.875rem;
   font-weight: bold;
 }
 main .presentation .result-data .item small {
   font-size: 1.25rem;
   color: #00252e;
   opacity: 0.8;
+}
+main .wave {
+  margin-top: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

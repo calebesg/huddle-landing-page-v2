@@ -129,7 +129,60 @@ main .presentation .result-data .item small {
   opacity: 0.8;
 }
 main .wave {
-  margin-top: 130px;
+  margin-top: 8.125rem;
+}
+main .wave .wave-wrapper .image-wave-top-1 {
+  height: 12vw;
+  width: 100%;
+  background: url("../images/bg-section-top-desktop-1.svg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+main .wave .wave-wrapper .image-wave-bottom-1 {
+  height: 12vw;
+  width: 100%;
+  background: url("../images/bg-section-bottom-desktop-1.svg") no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+main .wave .wave-wrapper .image-wave-top-2 {
+  height: 12vw;
+  width: 100%;
+  background: url("../images/bg-section-top-desktop-2.svg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+main .wave .wave-wrapper .image-wave-bottom-2 {
+  height: 12vw;
+  width: 100%;
+  background: url("../images/bg-section-bottom-desktop-2.svg") no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+main .wave .wave-wrapper .feature {
+  background-color: #f5faff;
+}
+main .wave .feature .container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.125rem 0;
+}
+main .wave .feature .container .info {
+  width: 32.5rem;
+}
+main .wave .feature .container .info .title {
+  font-size: 2.625rem;
+}
+main .wave .feature .container .info .description {
+  margin-top: 1.875rem;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+main .wave .feature .container img {
+  max-width: 32.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

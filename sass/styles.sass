@@ -68,5 +68,39 @@ main
           opacity: .8
 
   .wave
-    margin-top: 130px
+    margin-top: 8.125rem
 
+    .wave-wrapper
+      .image-wave-top-1
+        @include mixins.wave-image('bg-section-top-desktop-1', 'bottom')
+      .image-wave-bottom-1
+        @include mixins.wave-image('bg-section-bottom-desktop-1', 'top')
+      .image-wave-top-2
+        @include mixins.wave-image('bg-section-top-desktop-2', 'bottom')
+      .image-wave-bottom-2
+        @include mixins.wave-image('bg-section-bottom-desktop-2', 'top')
+
+      .feature
+        background-color: variables.$light-blue-100
+      
+    .feature
+      .container
+        @include mixins.container(variables.$desktop)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 3.125rem 0
+
+        .info
+          width: 32.5rem
+
+          .title
+            font-size: 2.625rem
+
+          .description
+            margin-top: 1.875rem
+            line-height: 1.75rem
+            font-size: 1.125rem
+
+        img
+          max-width: 32.5rem

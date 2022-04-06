@@ -11,6 +11,14 @@ header
     justify-content: space-between
     align-items: center
 
+    @include mixins.mobile
+      padding: 2rem
+
+    .brand
+      img
+        @include mixins.mobile
+          width: 6.875rem
+
     a.btn
       width: 8.5rem
       height: 2.5rem
@@ -18,16 +26,28 @@ header
       @include mixins.btn-outline
       @include mixins.flex-center
 
+      @include mixins.mobile
+        height: 1.5rem
+        width: 5rem
+        font-size: 0.625rem
+
 main
   .presentation
     @include mixins.container(variables.$desktop)
     @include mixins.flex-center
     flex-direction: column
 
+    @include mixins.mobile
+      @include mixins.container(80%)
+
     .title
       margin-top: 11.125rem
       font-size: 3.125rem
       text-align: center
+
+      @include mixins.mobile
+        margin-top: 5rem
+        font-size: 1.5rem
 
     .description
       margin-top: 2rem
@@ -36,20 +56,37 @@ main
       font-size: 1.25rem
       line-height: 2rem
 
+      @include mixins.mobile
+        margin-top: 1.5rem
+        font-size: 0.875rem
+        line-height: 1.5rem
+
     .btn
       margin-top: 3rem
       @include mixins.btn-large
+
+      @include mixins.mobile
+        height: 3rem
+        font-size: 0.875rem
+        width: 12.5rem
 
     .banner
       margin-top: 7.5rem
       max-width: 64.375rem
       width: 100%
 
+      @include mixins.mobile
+        margin-top: 7rem
+
     .result-data
       margin-top: 8rem
       display: flex
       align-items: center
       gap: 21.75rem
+
+      @include mixins.mobile
+        flex-direction: column
+        gap: 6rem
 
       .item
         @include mixins.flex-center
@@ -58,30 +95,61 @@ main
         img
           align-self: flex-start
 
+          @include mixins.mobile
+            width: 1.5rem
+
         p
           font-size: 4.875rem
           font-weight: bold
 
+          @include mixins.mobile
+            font-size: 3.25rem
+
         small
+          margin-top: 1.25rem
           font-size: 1.25rem
           color: variables.$cyan-900
           opacity: .8
 
+          @include mixins.mobile
+            font-size: 0.875rem
+
   .wave
     margin-top: 8.125rem
 
+    @include mixins.mobile
+      margin-top: 5rem
+
     .wave-wrapper
       .image-wave-top-1
-        @include mixins.wave-image('bg-section-top-desktop-1', 'bottom')
+        @include mixins.wave-image('bg-section-top-desktop-1', 'bottom', variables.$dsc-h)
+        
+        @include mixins.mobile
+          @include mixins.wave-image('bg-section-top-mobile-1', 'bottom', variables.$mob-h)
+          
       .image-wave-bottom-1
-        @include mixins.wave-image('bg-section-bottom-desktop-1', 'top')
+        @include mixins.wave-image('bg-section-bottom-desktop-1', 'top', variables.$dsc-h)
+
+        @include mixins.mobile
+          @include mixins.wave-image('bg-section-bottom-mobile-1', 'top', variables.$mob-h)
+
       .image-wave-top-2
-        @include mixins.wave-image('bg-section-top-desktop-2', 'bottom')
+        @include mixins.wave-image('bg-section-top-desktop-2', 'bottom', variables.$dsc-h)
+
+        @include mixins.mobile
+          @include mixins.wave-image('bg-section-top-mobile-2', 'bottom', variables.$mob-h)
+
       .image-wave-bottom-2
-        @include mixins.wave-image('bg-section-bottom-desktop-2', 'top')
+        @include mixins.wave-image('bg-section-bottom-desktop-2', 'top', variables.$dsc-h)
+
+        @include mixins.mobile
+          @include mixins.wave-image('bg-section-bottom-mobile-2', 'top', variables.$mob-h)
 
       .feature
         background-color: variables.$light-blue-100
+        
+        .container
+          flex-direction: column-reverse
       
     .feature
       .container
@@ -91,37 +159,68 @@ main
         align-items: center
         padding: 3.125rem 0
 
+        @include mixins.mobile
+          flex-direction: column
+          @include mixins.container(80%)
+
         .info
-          width: 32.5rem
+          max-width: 32.5rem
+          
+          @include mixins.mobile
+            margin-top: 4rem
+            text-align: center
 
           .title
             font-size: 2.625rem
+
+            @include mixins.mobile
+              font-size: 1.5rem
 
           .description
             margin-top: 1.875rem
             line-height: 1.75rem
             font-size: 1.125rem
 
+            @include mixins.mobile
+              font-size: 0.8rem
+              line-height: 1.25rem
+              margin-top: 1rem
+
         img
           max-width: 32.5rem
+          width: 100%
+
+          @include mixins.mobile
+            width: 90%
 
   .community
     @include mixins.container(variables.$desktop)
     margin-top: 8.75rem
     text-align: center
 
+    @include mixins.mobile
+      margin-top: 5rem
+
     .title
       font-size: 2.625rem
+
+      @include mixins.mobile
+        font-size: 1.5rem
 
     .btn
       @include mixins.btn-large
       margin: 2.625rem auto 0
 
+      @include mixins.mobile
+        height: 3rem
+        font-size: 0.875rem
+        width: 12.5rem
+
 footer
   margin-top: 10.625rem
 
   .bg-top
-    @include mixins.wave-image('bg-footer-top-desktop', 'bottom')
+    @include mixins.wave-image('bg-footer-top-desktop', 'bottom', variables.$dsc-h)
 
   .footer
     padding: 6.25rem 0

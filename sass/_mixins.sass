@@ -37,9 +37,13 @@
     border-color: variables.$pink-100
     color: variables.$pink-100
 
-@mixin wave-image($image, $position)
-  height: 12vw
+@mixin wave-image($image, $position, $h)
+  height: $h
   width: 100%
   background: url('../images/#{$image}.svg') no-repeat
   background-size: 100%
-  background-position: #{$position}
+  background-position: $position
+
+@mixin mobile
+  @media (max-width: 1000px)
+    @content

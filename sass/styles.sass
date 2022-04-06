@@ -222,26 +222,46 @@ footer
   .bg-top
     @include mixins.wave-image('bg-footer-top-desktop', 'bottom', variables.$dsc-h)
 
+    @include mixins.mobile
+      @include mixins.wave-image('bg-footer-top-mobile', 'bottom', variables.$dsc-h)
+
   .footer
     padding: 6.25rem 0
     background-color: variables.$cyan-900
+
+    @include mixins.mobile
+      padding: 2rem 0
 
     &-container
       @include mixins.container(variables.$desktop)
       display: flex
       justify-content: space-between
 
+      @include mixins.mobile
+        flex-direction: column-reverse
+        @include mixins.container(80%)
+
       .address
         width: 100%
 
+        @include mixins.mobile
+          margin-top: 6rem
+
+        img
+          @include mixins.mobile
+            max-width: 12rem
+
         address
           margin-top: 1.25rem
+          font-size: 1rem
           display: flex
           flex-direction: column
           font-style: normal
 
+          @include mixins.mobile
+            font-size: 0.875rem
+
           p
-            font-size: 1rem
             color: white
             max-width: 22.5rem
             line-height: 1.5rem
@@ -249,10 +269,17 @@ footer
           a
             margin-top: 1.25rem
             color: white
+
+            @include mixins.mobile
+              margin-top: 1rem
             
             img
               margin-right: 1rem
           
+          @include mixins.mobile
+            a:first-of-type
+              margin-top: 3rem
+
         .social
           margin-top: 5rem
           display: flex
@@ -260,18 +287,31 @@ footer
           justify-content: flex-start
           gap: 1.25rem
 
+          @include mixins.mobile
+            margin-top: 3rem
+            gap: 1rem
+
           .icon
             color: white
             font-size: 2.5rem
+
+            @include mixins.mobile
+              font-size: 1.8rem
       
       .news-letter
         width: fit-content
         padding-left: 5rem
 
+        @include mixins.mobile
+          padding-left: 0
+
         h2
           font-size: 1.5rem
           color: white
           text-transform: uppercase
+
+          @include mixins.mobile
+            font-size: 1.25rem
 
         .description
           font-size: 1rem
@@ -280,10 +320,17 @@ footer
           padding-right: 9.375rem
           line-height: 1.5rem
 
+          @include mixins.mobile
+            padding-right: 0
+            font-size: 0.875rem
+
         .form
           margin-top: 2.5rem
           display: flex
           align-items: center
+
+          @include mixins.mobile
+            flex-direction: column
 
           input
             width: 100%
@@ -298,3 +345,8 @@ footer
             border-radius: 0.5rem
             margin-left: 2.5rem
             width: 10rem
+
+            @include mixins.mobile
+              margin-left: 0
+              margin-top: 1rem
+              align-self: flex-end

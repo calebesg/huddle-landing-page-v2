@@ -385,9 +385,23 @@ footer .bg-top {
   background-size: 100%;
   background-position: "bottom";
 }
+@media (max-width: 1000px) {
+  footer .bg-top {
+    height: 12vw;
+    width: 100%;
+    background: url("../images/bg-footer-top-mobile.svg") no-repeat;
+    background-size: 100%;
+    background-position: "bottom";
+  }
+}
 footer .footer {
   padding: 6.25rem 0;
   background-color: #00252e;
+}
+@media (max-width: 1000px) {
+  footer .footer {
+    padding: 2rem 0;
+  }
 }
 footer .footer-container {
   max-width: 75rem;
@@ -395,17 +409,39 @@ footer .footer-container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  footer .footer-container {
+    flex-direction: column-reverse;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 footer .footer-container .address {
   width: 100%;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .address {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 1000px) {
+  footer .footer-container .address img {
+    max-width: 12rem;
+  }
+}
 footer .footer-container .address address {
   margin-top: 1.25rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   font-style: normal;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .address address {
+    font-size: 0.875rem;
+  }
+}
 footer .footer-container .address address p {
-  font-size: 1rem;
   color: white;
   max-width: 22.5rem;
   line-height: 1.5rem;
@@ -414,8 +450,18 @@ footer .footer-container .address address a {
   margin-top: 1.25rem;
   color: white;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .address address a {
+    margin-top: 1rem;
+  }
+}
 footer .footer-container .address address a img {
   margin-right: 1rem;
+}
+@media (max-width: 1000px) {
+  footer .footer-container .address address a:first-of-type {
+    margin-top: 3rem;
+  }
 }
 footer .footer-container .address .social {
   margin-top: 5rem;
@@ -424,18 +470,39 @@ footer .footer-container .address .social {
   justify-content: flex-start;
   gap: 1.25rem;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .address .social {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+}
 footer .footer-container .address .social .icon {
   color: white;
   font-size: 2.5rem;
+}
+@media (max-width: 1000px) {
+  footer .footer-container .address .social .icon {
+    font-size: 1.8rem;
+  }
 }
 footer .footer-container .news-letter {
   width: fit-content;
   padding-left: 5rem;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .news-letter {
+    padding-left: 0;
+  }
+}
 footer .footer-container .news-letter h2 {
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  footer .footer-container .news-letter h2 {
+    font-size: 1.25rem;
+  }
 }
 footer .footer-container .news-letter .description {
   font-size: 1rem;
@@ -444,10 +511,21 @@ footer .footer-container .news-letter .description {
   padding-right: 9.375rem;
   line-height: 1.5rem;
 }
+@media (max-width: 1000px) {
+  footer .footer-container .news-letter .description {
+    padding-right: 0;
+    font-size: 0.875rem;
+  }
+}
 footer .footer-container .news-letter .form {
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  footer .footer-container .news-letter .form {
+    flex-direction: column;
+  }
 }
 footer .footer-container .news-letter .form input {
   width: 100%;
@@ -462,6 +540,13 @@ footer .footer-container .news-letter .form .subscribe {
   border-radius: 0.5rem;
   margin-left: 2.5rem;
   width: 10rem;
+}
+@media (max-width: 1000px) {
+  footer .footer-container .news-letter .form .subscribe {
+    margin-left: 0;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

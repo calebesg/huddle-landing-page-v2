@@ -211,7 +211,7 @@ main .wave .wave-wrapper .image-wave-top-1 {
   width: 100%;
   background: url("../images/bg-section-top-desktop-1.svg") no-repeat;
   background-size: 100%;
-  background-position: "bottom";
+  background-position: bottom;
 }
 @media (max-width: 1000px) {
   main .wave .wave-wrapper .image-wave-top-1 {
@@ -219,7 +219,7 @@ main .wave .wave-wrapper .image-wave-top-1 {
     width: 100%;
     background: url("../images/bg-section-top-mobile-1.svg") no-repeat;
     background-size: 100%;
-    background-position: "bottom";
+    background-position: bottom;
   }
 }
 main .wave .wave-wrapper .image-wave-bottom-1 {
@@ -227,7 +227,7 @@ main .wave .wave-wrapper .image-wave-bottom-1 {
   width: 100%;
   background: url("../images/bg-section-bottom-desktop-1.svg") no-repeat;
   background-size: 100%;
-  background-position: "top";
+  background-position: top;
 }
 @media (max-width: 1000px) {
   main .wave .wave-wrapper .image-wave-bottom-1 {
@@ -235,7 +235,7 @@ main .wave .wave-wrapper .image-wave-bottom-1 {
     width: 100%;
     background: url("../images/bg-section-bottom-mobile-1.svg") no-repeat;
     background-size: 100%;
-    background-position: "top";
+    background-position: top;
   }
 }
 main .wave .wave-wrapper .image-wave-top-2 {
@@ -243,7 +243,7 @@ main .wave .wave-wrapper .image-wave-top-2 {
   width: 100%;
   background: url("../images/bg-section-top-desktop-2.svg") no-repeat;
   background-size: 100%;
-  background-position: "bottom";
+  background-position: bottom;
 }
 @media (max-width: 1000px) {
   main .wave .wave-wrapper .image-wave-top-2 {
@@ -251,7 +251,7 @@ main .wave .wave-wrapper .image-wave-top-2 {
     width: 100%;
     background: url("../images/bg-section-top-mobile-2.svg") no-repeat;
     background-size: 100%;
-    background-position: "bottom";
+    background-position: bottom;
   }
 }
 main .wave .wave-wrapper .image-wave-bottom-2 {
@@ -259,7 +259,7 @@ main .wave .wave-wrapper .image-wave-bottom-2 {
   width: 100%;
   background: url("../images/bg-section-bottom-desktop-2.svg") no-repeat;
   background-size: 100%;
-  background-position: "top";
+  background-position: top;
 }
 @media (max-width: 1000px) {
   main .wave .wave-wrapper .image-wave-bottom-2 {
@@ -267,7 +267,7 @@ main .wave .wave-wrapper .image-wave-bottom-2 {
     width: 100%;
     background: url("../images/bg-section-bottom-mobile-2.svg") no-repeat;
     background-size: 100%;
-    background-position: "top";
+    background-position: top;
   }
 }
 main .wave .wave-wrapper .feature {
@@ -383,7 +383,7 @@ footer .bg-top {
   width: 100%;
   background: url("../images/bg-footer-top-desktop.svg") no-repeat;
   background-size: 100%;
-  background-position: "bottom";
+  background-position: bottom;
 }
 @media (max-width: 1000px) {
   footer .bg-top {
@@ -391,7 +391,7 @@ footer .bg-top {
     width: 100%;
     background: url("../images/bg-footer-top-mobile.svg") no-repeat;
     background-size: 100%;
-    background-position: "bottom";
+    background-position: bottom;
   }
 }
 footer .footer {
